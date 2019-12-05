@@ -26,18 +26,22 @@ chmod +x /etc/profile.d/java11.sh
 ----------------------------------------maven--------------------------------------
 12  sudo yum install maven
 13  sudo vi /etc/profile.d/maven.sh
-
+----(info: click i for insert>then copy below 2 lines and paste)
 export M2_HOME="${M2_HOME:-/usr/share/maven}"
 export JAVA_HOME; $M2_HOME/bin/mvn
-
+----(info: esc +:wq enter)
 14  chmod +x /etc/profile.d/maven.sh
    15  source /etc/profile.d/maven.sh
+   ----to check-- #cd /etc/profile.d
+                  #ll
+   
    16  mvn --version
      17  which git
 --------------------------------------tomcat--------------------------------------
  
    18  cd /opt/
-   19  wget http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz
+   19  wget http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz 
+   (--info-- right click the tar link and copy link and paste in linux---)
    20  ls
    21  tar -xvf apache-tomcat-8.5.46.tar.gz
    22  ls
